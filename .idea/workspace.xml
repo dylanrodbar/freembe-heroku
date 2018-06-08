@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="087457a4-c5dc-45c5-8b42-bd18490e2080" name="Default" comment="" />
+    <list default="true" id="087457a4-c5dc-45c5-8b42-bd18490e2080" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -21,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="56" />
+              <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -369,12 +371,12 @@
       <workItem from="1527992597948" duration="9234000" />
       <workItem from="1528084908871" duration="11282000" />
       <workItem from="1528416174213" duration="1195000" />
-      <workItem from="1528425301399" duration="5725000" />
+      <workItem from="1528425301399" duration="5769000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61924000" />
+    <option name="totallyTimeSpent" value="61968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -755,7 +757,7 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="42" lean-forward="true" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="56" />
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
         </state>
       </provider>
     </entry>
