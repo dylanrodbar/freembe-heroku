@@ -1,6 +1,6 @@
 class CategorySerializer < ActiveModel::Serializer
   attributes :id, :name, :description, :photo
-  has_many :subcategory_x_category, key: "Subcategories"
+  has_many :subcategory_x_category, key: "subcategories"
 
   class SubcategoryXCategorySerializer < ActiveModel::Serializer
     attributes :subcategory
