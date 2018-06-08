@@ -11,6 +11,6 @@
 #end
 #
 #
-user = User.create({name: "admin", email: "admin1234@gmail.com", password: "Admin123456", photo: "https://res.cloudinary.com/poppycloud/image/upload/v1528189893/wacukhrblsxdcwsbmrqi.jpg"})
+user = User.create({name: "admin", email: "admin1234@gmail.com", password: "Admin123456", photo: "https://res.cloudinary.com/poppycloud/image/upload/v1528189893/wacukhrblsxdcwsbmrqi.jpg", type: "Admin"})
 #@user = User.new({name: "admin", email: "admin123@gmail.com", password: "Admin12345", photo: "https://res.cloudinary.com/poppycloud/image/upload/v1528189893/wacukhrblsxdcwsbmrqi.jpg"})
 #@user.save

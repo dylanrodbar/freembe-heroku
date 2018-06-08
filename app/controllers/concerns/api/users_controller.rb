@@ -21,14 +21,12 @@ class UsersController < ApplicationController
 
   # post
   # crea un nuevo usuario en la base de datos
-  # /api/users?name=&email=&password=&photo=&
-
-
+  # /api/users?name=&email=&password=&photo=&type=
   def create
-    @user = User.new({name: params[:name], email: params[:email], password: params[:password], photo: params[:photo]})
+    @user = User.new({name: params[:name], email: params[:email], password: params[:password], photo: params[:photo], type: params[:type]})
     @user.save
-    @j = JsonWebToken.encode(user_id: @user.id)
-    render json:  {user: @user, auth_token: @j}
+    @auth = JsonWebToken.encode(user_id: @user.id)
+    render json:  {user: @user, auth_token: @auth}
   end
 
   # delete
@@ -42,16 +40,20 @@ class UsersController < ApplicationController
 
   # put
   # edita un usuario de la base de datos, dado su id
-  # /api/users/id?name=&email=&password=&photo=& donde id es el identificador del usuario
+  # /api/users/id?name=&email=&password=&photo=&type= donde id es el identificador del usuario
   def update
     @user = User.find(params[:id])
     @user.name = params[:name]
     @user.email = params[:email]
     @user.password = params[:password]
     @user.photo = params[:photo]
+    @user.type = params[:type]
     @user.save
     render json:@user
   end
+
+
+  #añadir consulta para editar solo nombre y foto
 
 
 end
