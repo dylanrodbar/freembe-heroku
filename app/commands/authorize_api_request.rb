@@ -18,7 +18,7 @@ class AuthorizeApiRequest
     @user || errors.add(:token, 'Invalid token') && nil
   end
 
-  
+
   def decoded_auth_token
     @decoded_auth_token ||= JsonWebToken.decode(http_auth_header)
   end
