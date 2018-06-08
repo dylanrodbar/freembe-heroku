@@ -1,4 +1,3 @@
-require 'jwt'
 class ApplicationController < ActionController::API
   before_action :authenticate_request, raise: false
   attr_reader :current_user
