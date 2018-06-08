@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="087457a4-c5dc-45c5-8b42-bd18490e2080" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/commands/authorize_api_request.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/commands/authorize_api_request.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/commands/authenticate_admin.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/commands/authotize_api_request_admin.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -47,29 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authotize_api_request_admin.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/commands/authotize_api_request_admin.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="authenticate_admin.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/commands/authenticate_admin.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="authentication_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+            <state relative-caret-position="212">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -374,12 +357,12 @@
       <workItem from="1527992597948" duration="9234000" />
       <workItem from="1528084908871" duration="11282000" />
       <workItem from="1528416174213" duration="1195000" />
-      <workItem from="1528425301399" duration="329000" />
+      <workItem from="1528425301399" duration="449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56528000" />
+    <option name="totallyTimeSpent" value="56648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -761,8 +744,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/authentication_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="212">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
         </state>
       </provider>
     </entry>
