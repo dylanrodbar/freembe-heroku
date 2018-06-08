@@ -23,7 +23,7 @@ class UsersController < ApplicationController
   # crea un nuevo usuario en la base de datos
   # /api/users?name=&email=&password=&photo=&type=
   def create
-    @user = User.new({name: params[:name], email: params[:email], password: params[:password], photo: params[:photo], type_of_user: params[:type]})
+    @user = User.new({name: params[:name], email: params[:email], password: params[:password], photo: params[:photo], role: params[:type]})
     @user.save
     @auth = JsonWebToken.encode(user_id: @user.id)
     render json:  {user: @user, auth_token: @auth}
@@ -47,7 +47,7 @@ class UsersController < ApplicationController
     @user.email = params[:email]
     @user.password = params[:password]
     @user.photo = params[:photo]
-    @user.type = params[:type]
+    @user.role = params[:type]
     @user.save
     render json:@user
   end
