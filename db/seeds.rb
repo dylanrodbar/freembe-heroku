@@ -10,4 +10,6 @@
 #  subcategory = Subcategory.create({name: Faker::Name.name, description: Faker::Name.name, photo: "https://res.cloudinary.com/poppycloud/image/upload/v1526809567/z5mgz0dcea3tv5qe1fln.png"})
 #end
 #
-subcategoryxcategory = SubcategoryXCategory.create({category_id: 2, subcategory_id: 2})
+1.times do
+user = User.create({name: "admin", email: "admin123@gmail.com", password: "Admin12345", photo: "https://res.cloudinary.com/poppycloud/image/upload/v1528189893/wacukhrblsxdcwsbmrqi.jpg"})
+end
