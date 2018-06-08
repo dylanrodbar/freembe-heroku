@@ -3,9 +3,10 @@ class CategorySerializer < ActiveModel::Serializer
   has_many :subcategory_x_category
 
   class SubcategoryXCategorySerializer < ActiveModel::Serializer
+    attributes :subcategory
     belongs_to :subcategory
-    class SubcategorySerializer < ActiveModel::Serializer
-      attributes :id, :name, :description, :photo
-    end
+    #class SubcategorySerializer < ActiveModel::Serializer
+    #  attributes :id, :name, :description, :photo
+    #end
   end
 end
