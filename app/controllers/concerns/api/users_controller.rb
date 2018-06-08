@@ -1,6 +1,8 @@
 module Api
 class UsersController < ApplicationController
 
+  skip_before_action :authenticate_request, :except => [:index, :show, :destroy, :update]
+
   # get
   # obtiene los usuarios de la base de datos
   # /api/users
@@ -20,10 +22,13 @@ class UsersController < ApplicationController
   # post
   # crea un nuevo usuario en la base de datos
   # /api/users?name=&email=&password=&photo=&
+
+
   def create
     @user = User.new({name: params[:name], email: params[:email], password: params[:password], photo: params[:photo]})
     @user.save
-    render json:@user
+    @j = JsonWebToken.encode(user_id: @user.id)
+    render json:  {user: @user, auth_token: @j}
   end
 
   # delete
@@ -47,5 +52,7 @@ class UsersController < ApplicationController
     @user.save
     render json:@user
   end
+
+
 end
 end

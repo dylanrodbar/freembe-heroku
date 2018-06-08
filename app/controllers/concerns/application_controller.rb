@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  before_action :authenticate_request, raise: false
+  before_action :authenticate_request, except: [:users]
   attr_reader :current_user
 
   private
