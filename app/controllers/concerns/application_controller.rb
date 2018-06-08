@@ -1,5 +1,4 @@
 class ApplicationController < ActionController::API
-  config.autoload_paths += %W(#{config.root}/lib)
   before_action :authenticate_request, raise: false
   attr_reader :current_user
 
