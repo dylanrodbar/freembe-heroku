@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     resources :comments
     resources :admins
     post 'authenticate', to: 'authentication#authenticate'
+    get 'categorybyname', to: 'categories#byname'
 
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

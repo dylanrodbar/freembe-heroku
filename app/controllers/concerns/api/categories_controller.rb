@@ -47,6 +47,14 @@ class CategoriesController < ApplicationController
     render json:@category
   end
 
+  # get
+  # obtiene una categoría por el nombre
+  # /api/categorybyname?name=
+  def byname
+    @category = Category.where(name: params[:name]).take
+    render json:@category
+  end
+
 
 
 
