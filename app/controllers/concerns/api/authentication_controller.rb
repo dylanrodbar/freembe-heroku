@@ -1,7 +1,7 @@
 module Api
 class AuthenticationController < ApplicationController
 
-  skip_before_action :authenticate_request
+  skip_before_action :authenticate_request, raise: false
   def authenticate
     command = AuthenticateUser.call(params[:email], params[:password])
 
