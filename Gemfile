@@ -33,18 +33,19 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  # gem to generate fake data in order to test the api
-  gem 'faker'
-  # dsl: domain specific language, it lets define json structures on the views
-  gem 'jbuilder', '~> 2.5'
-
-  gem 'active_model_serializers', '~> 0.10.0'
-
-  gem 'bcrypt', '~> 3.1.7'
-
-  gem 'jwt'
 
 end
+
+# gem to generate fake data in order to test the api
+gem 'faker'
+# dsl: domain specific language, it lets define json structures on the views
+gem 'jbuilder', '~> 2.5'
+
+gem 'active_model_serializers', '~> 0.10.0'
+
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'jwt'
 
 
 gem 'simple_command'
