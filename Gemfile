@@ -31,22 +31,23 @@ group :development, :test do
 end
 
 group :development do
-  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-  # gem to generate fake data in order to test the api
-  gem 'faker'
-  # dsl: domain specific language, it lets define json structures on the views
-  gem 'jbuilder', '~> 2.5'
 
-  gem 'active_model_serializers', '~> 0.10.0'
-
-  gem 'bcrypt', '~> 3.1.7'
-
-  gem 'jwt'
-
-  gem 'simple_command'
 end
 
+# Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+gem 'web-console', '>= 3.3.0'
+# gem to generate fake data in order to test the api
+gem 'faker'
+# dsl: domain specific language, it lets define json structures on the views
+gem 'jbuilder', '~> 2.5'
+
+gem 'active_model_serializers', '~> 0.10.0'
+
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'jwt'
+
+gem 'simple_command'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ruby "2.2.6"
