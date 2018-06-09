@@ -3,12 +3,14 @@ class AnnouncementSerializer < ActiveModel::Serializer
 
   has_many :favorites
   class FavoriteSerializer < ActiveModel::Serializer
-    attributes :id, :user
+    attributes :user
+    #attributes :id, :user
   end
 
   has_many :comments
   class CommentSerializer < ActiveModel::Serializer
-    attributes :id, :user, :description
+    attributes :user
+    #attributes :id, :user, :description
   end
 
 end
