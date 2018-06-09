@@ -64,7 +64,7 @@ class AnnouncementsController < ApplicationController
 
 
   def announcesubcategory
-    @announcements = Announcement.where(subcategory_id: params[:subcategory_id]).take
+    @announcements = Announcement.where(subcategory_id: params[:subcategory_id])
     render json:@announcements
   end
 end
