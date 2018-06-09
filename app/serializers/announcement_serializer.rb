@@ -9,7 +9,7 @@ class AnnouncementSerializer < ActiveModel::Serializer
 
   has_many :comments
   class CommentSerializer < ActiveModel::Serializer
-    attributes :user
+    attributes :user, :description
     #attributes :id, :user, :description
   end
 
