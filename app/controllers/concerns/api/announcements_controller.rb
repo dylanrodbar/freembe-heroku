@@ -19,7 +19,7 @@ class AnnouncementsController < ApplicationController
 
   # post
   # crea un nuevo anuncio en la base de datos
-  # /api/announcements?title=&description=&price=&photo=&latitude=&longitude=&subcategory_id=&place= donde id es el identificador del anuncio
+  # /api/announcements?title=&description=&price=&photo=&user_id=&latitude=&longitude=&subcategory_id=&place= donde id es el identificador del anuncio
   def create
     @announcement = Announcement.new({title: params[:title], description: params[:description], price: params[:price], photo: params[:photo], user_id: params[:user_id], latitude: params[:latitude], longitude: params[:longitude], subcategory_id: params[:subcategory_id], place: params[:place]})
     @announcement.save
