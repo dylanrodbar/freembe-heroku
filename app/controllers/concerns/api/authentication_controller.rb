@@ -7,7 +7,7 @@ class AuthenticationController < ApplicationController
 
 
     if command.success?
-      render json: { auth_token: command.result[0], id: command.result[1] name: command.result[2], email: command.result[3], photo: command.result[4], role: command.result[5] }
+      render json: { auth_token: command.result[0], id: command.result[1], name: command.result[2], email: command.result[3], photo: command.result[4], role: command.result[5] }
     else
       render json: { error: command.errors }, status: :unauthorized
     end
