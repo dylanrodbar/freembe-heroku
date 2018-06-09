@@ -21,9 +21,16 @@ class FavoritesController < ApplicationController
   # crea un nuevo favorito en la base de datos
   # /api/favorites?user_id=&announcement_id=
   def create
-    @favorite = Favorite.new({user_id: params[:user_id], announcement_id: params[:announcement_id]})
-    @favorite.save
-    render json:@favorite
+    @favorite = Favorite.where(user_id: params[:user_id]).and(Favorite.where(announcement_id: params[:announcement_id]))
+    if @favorite
+      @favorite.destroy
+      render json:@favorite
+    end
+    else
+      @favorite = Favorite.new({user_id: params[:user_id], announcement_id: params[:announcement_id]})
+      @favorite.save
+      render json:@favorite
+    end
   end
 
   # delete

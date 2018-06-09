@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="087457a4-c5dc-45c5-8b42-bd18490e2080" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/announcements_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/announcements_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/api/favorites_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/concerns/api/favorites_controller.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -19,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="announcements_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="announcements_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/announcements_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="66" column="80" lean-forward="true" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
+            <state relative-caret-position="249">
+              <caret line="69" column="3" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -64,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="favorites_controller.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="favorites_controller.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/favorites_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+            <state relative-caret-position="178">
+              <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -140,7 +140,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20180603080145_author_to_user_id.rb" />
         <option value="$PROJECT_DIR$/app/models/comment.rb" />
         <option value="$PROJECT_DIR$/app/models/announcement.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/concerns/api/favorites_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/concerns/api/comments_controller.rb" />
         <option value="$PROJECT_DIR$/app/serializers/comment_serializer.rb" />
         <option value="$PROJECT_DIR$/lib/json_web_token.rb" />
@@ -173,6 +172,7 @@
         <option value="$PROJECT_DIR$/app/models/favorite.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/concerns/api/announcements_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/concerns/api/favorites_controller.rb" />
       </list>
     </option>
   </component>
@@ -402,12 +402,12 @@
       <workItem from="1528084908871" duration="11282000" />
       <workItem from="1528416174213" duration="1195000" />
       <workItem from="1528425301399" duration="22154000" />
-      <workItem from="1528491924027" duration="12143000" />
+      <workItem from="1528491924027" duration="13391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90496000" />
+    <option name="totallyTimeSpent" value="91744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -727,13 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/favorites_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="29" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/serializers/announcement_serializer.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -771,8 +764,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/announcements_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="66" column="80" lean-forward="true" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
+        <state relative-caret-position="249">
+          <caret line="69" column="3" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/concerns/api/favorites_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
         </state>
       </provider>
     </entry>
