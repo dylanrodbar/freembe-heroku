@@ -5,8 +5,7 @@ class AnnouncementsController < ApplicationController
   # obtiene todos los anuncios de la base de datos
   # /api/announcements/
   def index
-    @announcements = Announcement.order('COUNT(favorites) DESC')
-    #@announcements = Announcement.order('created_at DESC')
+    @announcements = Announcement.order('created_at DESC')
     render json:@announcements
   end
 
@@ -52,6 +51,15 @@ class AnnouncementsController < ApplicationController
     @announcement.place = params[:place]
     @announcement.save
     render json:@announcement
+  end
+
+  # get
+  # obtiene una publicación random
+  # /api/randomannouncement
+  def random
+    @announcements = Announcement.order("RANDOM()").first
+    #@announcements = Announcement.order('created_at DESC')
+    render json:@announcements
   end
 end
 end
