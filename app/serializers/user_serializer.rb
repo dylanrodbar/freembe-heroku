@@ -3,12 +3,12 @@ class UserSerializer < ActiveModel::Serializer
 
   has_many :emails
   class EmailSerializer < ActiveModel::Serializer
-    attributes :id, :user_id, :email
+    attributes :id, :email
   end
 
   has_many :telephones
   class TelephoneSerializer < ActiveModel::Serializer
-    attributes :id, :user_id, :telephone
+    attributes :id, :telephone
   end
 
   has_many :announcements
