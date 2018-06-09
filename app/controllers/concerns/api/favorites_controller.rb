@@ -22,7 +22,7 @@ class FavoritesController < ApplicationController
   # /api/favorites?user_id=&announcement_id=
   def create
     @favorite = Favorite.where(user_id: params[:user_id]).and(Favorite.where(announcement_id: params[:announcement_id]))
-    if @favorite
+    if @favorite.present?
       @favorite.destroy
       render json:@favorite
     end
