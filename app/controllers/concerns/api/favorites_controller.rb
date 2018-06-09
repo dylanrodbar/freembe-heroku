@@ -25,7 +25,6 @@ class FavoritesController < ApplicationController
     if @favorite.present?
       @favorite.destroy
       render json:@favorite
-    end
     else
       @favorite = Favorite.new({user_id: params[:user_id], announcement_id: params[:announcement_id]})
       @favorite.save
