@@ -61,5 +61,11 @@ class AnnouncementsController < ApplicationController
     #@announcements = Announcement.order('created_at DESC')
     render json:@announcements
   end
+
+
+  def announcesubcategory
+    @announcements = Announcement.where(subcategory_id: params[:subcategory_id]).take
+    render json:@announcements
+  end
 end
 end

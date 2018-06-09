@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     post 'authenticate', to: 'authentication#authenticate'
     get 'categorybyname', to: 'categories#byname'
     get 'randomannouncement', to: 'announcements#random'
+    get 'announcementsubcategory', to: 'announcements#announcesubcategory'
+
 
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
